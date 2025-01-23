@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店と料理検索システム</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <header>
+    <header class="hero">
+    <h1>
+      店と料理の検索
+    </h1>
+  </header>
+
+  <main>
+    <!-- 検索フォーム -->
+    <section id="search-form">
+      <h2>検索条件</h2>
+      <form id="search">
+        <label for="store-name">店名:</label>
+        <input type="text" id="store-name" placeholder="例: レストランA">
+
+        <label for="area1">エリア1:</label>
+        <select id="area1">
+          <option value="">選択してください</option>
+          <option value="ランド">ランド</option>
+          <option value="シー">シー</option>
+        </select>
+
+        <label for="area2">エリア2:</label>
+        <select id="area2" disabled>
+          <option value="">エリア1を選択してください</option>
+        </select>
+
+        <label for="tag">タグ:</label>
+        <input type="text" id="tag" placeholder="例: 和食">
+
+        <button type="button" id="search-button">検索</button>
+      </form>
+    </section>
+
+    <!-- 結果表示エリア -->
+    <section id="results">
+      <h2>検索結果</h2>
+      <ul id="results-list">
+        <!-- 検索結果がここに表示される -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
