@@ -6,7 +6,7 @@ body, html {
 
 .hero {
   width: 100%;
-  height: 100vh; /* ビューポートの高さ全体 */
+  height: 40px; /* ビューポートの高さ全体 */
   background-image: url('https://addect.github.io/aaa/LINE_ALBUM_ディズニー_231029_68.jpg');
   background-size: cover;
   background-position: center;
